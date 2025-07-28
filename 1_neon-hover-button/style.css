@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    align-items: center; /* centers vertically */
+    justify-content: center; /* centers horizontally */
+}
+
+button {
+    /* inside button */
+    padding: 10px 20px;  /* padding around the text "button" */
+    text-transform: uppercase;
+    border-radius: 8px;  /* corners of the button */
+    font-size: 17px;
+    color: #00000042;
+    text-shadow: none;
+    cursor: pointer;  /* changes the cursor when hovering above button */
+    /* outside button */
+    background: #ff00c837;
+    box-shadow: transparent;
+    border: 1px solid #00000025;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    color: #FFFFFF;
+    background: #ff00c8;
+    border: 1px solid #ff00c8;
+    text-shadow: /* creates a fade around the text */
+    0 0 5px #FFFFFF,
+    0 0 10px #FFFFFF,
+    0 0 20px #FFFFFF;
+    box-shadow: /* creates a fade around the button */
+    0 0 5px #ff00c8,
+    0 0 20px #ff00c8,
+    0 0 50px #ff00c8,
+    0 0 100px #ff00c8;
+}
